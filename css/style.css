@@ -72,9 +72,21 @@ main .logos {
 }
 main .logos svg {
   height: 40px;
+  width: 40px;
   fill: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   padding: 5px 10px;
   border-radius: 50%;
-  margin: 0 3px;
+  margin: 0 3px 3px;
+}
+main .logos svg:hover {
+  fill: hsl(300deg, 69%, 71%);
+  border: 1px solid hsl(300deg, 69%, 71%);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-rows: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+@mixin query {
+    @media (max-width:600px) {
+        main
+        {
+            grid-template-rows: repeat(1, 1fr);
+        }
+    }
+}

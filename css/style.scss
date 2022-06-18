@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixins";
 
 *
 {
@@ -100,12 +101,20 @@ main{
         vertical-align: middle;
         svg{
             height: 40px;
+            width: 40px;
             fill: map-get($colors , texts );
-            border: 2px solid map-get($colors , texts );
+            border: 1px solid map-get($colors , texts );
             padding: 5px 10px;
             border-radius: 50%;
-            margin: 0 3px;
-            // color: map-get($colors , texts );
+            margin: 0 3px 3px;
+            
+            &:hover{
+                fill: map-get($colors , secondary );
+                border: 1px solid map-get($colors , secondary );
+                cursor: pointer;
+            }
         }
     }
 }
+
+@include query;
